@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/fuits"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"/>
+            <TextView
+                android:text="@string/fruits"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:layout_margin="10dp"
+                android:background="@color/purple_500"
+                android:elevation="15dp"
+                tools:targetApi="LOLLIPOP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/fruitsRecycler"
+           android:layout_weight="1"
+           tools:listitem="@layout/item_fruits"
+           android:layout_width="match_parent"
+           android:layout_height="0dp" />
+   </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

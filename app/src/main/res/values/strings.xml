@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerViewDemo</string>
+    <string name="fruits">Fruits Calories and sugar</string>
+</resources>

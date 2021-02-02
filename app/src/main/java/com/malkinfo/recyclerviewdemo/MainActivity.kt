@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         /**set init*/
         fruitsData = ArrayList<FruitsData>()
-        fruitsAdapter = FruitsAdapter(fruitsData)
+        fruitsAdapter = FruitsAdapter(this,fruitsData)
         fruitsRecycler.layoutManager = LinearLayoutManager(this)
         fruitsRecycler.adapter = fruitsAdapter
           /**set list*/
